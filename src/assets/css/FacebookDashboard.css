@@ -1,0 +1,236 @@
+.facebook_home {
+    background-image: url(../images/c2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+   padding: 20px 20px;
+    
+}
+
+.facebook_text h3 {
+    text-align: center;
+    padding: 25px 0px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.date_picker_div input {
+    padding: 0px 10px !important;
+    height: 35.5px;
+    width: 120px !important;
+    background: transparent !important;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    color: #FFFFFF;
+}
+
+.date_picker_div input:focus {
+    border: 0.1px solid #FFFFFF; 
+    color: #FFFFFF;
+    box-shadow: none; 
+    border-left: 0px !important;
+}
+
+.date_picker_div span {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.calendar_icon {
+    color: #FFFFFF;
+}
+
+.icon_group {
+    /* margin-top: 11px; */
+    border-right: 0px !important;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.tabs_wrap{
+    padding: 0px;
+  }
+  
+   .tabs_wrap ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            /* margin-top: 10px; */
+  }
+  
+ .tabs_wrap ul li{
+    width: 90px;
+      text-align: center;
+      background: #e9ecf1;
+      border-right: 1px solid #c1c4c9;
+      padding: 10px 0px !important;
+      font-size: 14px;
+      list-style: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .tabs_wrap ul li:first-child{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+.tabs_wrap ul li:last-child{
+    border-right: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+.tabs_wrap ul li:hover,
+ .tabs_wrap ul li.active{
+    background: #7fc469;
+    color: #fff;
+  }
+  
+  .setup_div button {
+    font-size: 16px;
+    padding: 7px 15px;
+    /* margin-top: 10px; */
+    border-radius: 40px;
+    border: 1px solid #FFFFFF;
+  }
+
+  
+.cardss {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: border-box;
+  }
+  
+  .cardss .card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+  }
+
+  
+
+  .cardss .card-body h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+  }
+  
+  .cardss .card-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .card-stats .card-body {
+    padding: 1rem 1.5rem;
+  }
+
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .icons i {
+    font-size: 2.25rem;
+  }
+  
+  .icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .icon-shape i {
+    font-size: 1.25rem;
+  }
+
+  .linechart_row {
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .by_country_div h2 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .card_title {
+    font-size: 14px !important;
+  }
+
+  .comTable tr th {
+    font-size: 14px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .comTable tr td {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .table_row h2 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .linechart_row h2 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+@media (max-width: 768px) {
+  .facebook_contain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date_picker_div input {
+    width: 60px !important;
+  }
+
+  .home .text {
+    padding: 12px 0px !important;
+  }
+
+  .column_divs {
+    width: 100%;
+  }
+  .main_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container {
+    width: calc(100% - 90px) !important;
+  }
+  .column_all {
+    width: 100%;
+  }
+}
+
+
