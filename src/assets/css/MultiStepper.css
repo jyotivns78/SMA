@@ -1,0 +1,14 @@
+.stepper_container {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.m_button {
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: rgb(6, 75, 75);
+    color: #FFFFFF;
+    border: 1px solid rgb(6, 75, 75);
+    border-radius: 3px;
+}

@@ -1,0 +1,14 @@
+.search_home {
+    height: 100vh;
+}
+
+.tabs_contain {
+    background-color: antiquewhite;
+}
+
+/* SearchEngine.css */
+
+.brand-tab {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-left: 8px; /* Add margin for spacing */
+}

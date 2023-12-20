@@ -1,0 +1,130 @@
+.creative_form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 30rem;
+  }
+
+  .creative_form
+   input {
+    background-color: #FFFFFF !important;
+  }
+  
+  .creative_form h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  .creative_form input[type="text"],
+  .creative_form input[type="password"],
+  .creative_form input[type="date"],
+  .creative_form input[type="datetime"],
+  .creative_form input[type="email"],
+  .creative_form input[type="number"],
+  .creative_form input[type="search"],
+  .creative_form input[type="tel"],
+  .creative_form input[type="time"],
+  .creative_form input[type="url"],
+  .creative_form textarea,
+  .creative_form select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8eeef !important;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 20px;
+  }
+  
+  .creative_form input[type="radio"],
+  .creative_form input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  .creative_form select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  .creative_form button {
+    padding: 10px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+  .creative_form fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .creative_form legend {
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .creative_form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .creative_form label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .creative_form .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+
+  .creative_form p {
+    margin-top: -20px;
+  }
+
+  .whatsapp_div span {
+    cursor: pointer;
+  }
+
+  .whatsapp_div span i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  .form-switch .form-check-input {
+    background-color: rgb(15, 201, 15) !important;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    .creative_form {
+      max-width: 480px;
+    }
+  
+  }
+  

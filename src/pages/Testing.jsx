@@ -1,16 +1,16 @@
-
+// FacebookDashboard.jsx
 import React, { useState } from 'react';
 import Header from '../components/Header';
+import { HorizontalBar } from '../components/HorizontalBar';
 import "../assets/css/FacebookDashboard.css";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendar, FaCog } from 'react-icons/fa';
-import ConversionByAdGroup from '../components/GoogleAd/ConversionByAdGroup';
-import CompaignsTable from '../components/GoogleAd/CompaignsTable';
-import ClicksByAdGroup from '../components/GoogleAd/ClicksByAdGroup';
-import Table from 'react-bootstrap/Table';
+import LineChart from '../components/LineChart';
+import FollowersGrowthChart from '../components/FollowersGrowthChart';
+import FollowersByCountry from '../components/FollowersByCountry';
 
-const GoogleAdsDashboard = () => {
+const Testing = () => {
 
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
@@ -23,7 +23,7 @@ const GoogleAdsDashboard = () => {
     const mainContainerContent = (
         <section className="home facebook_home">
         <div className="text facebook_text">
-          <h3>Google Ads Dashboard</h3>
+          <h3>Facebook Dashboard</h3>
 
           <div className='facebook_contain d-flex justify-content-between'>
             <div className='date_picker_div'>
@@ -118,18 +118,18 @@ const GoogleAdsDashboard = () => {
           </div>
 
           <div className='main_container pt-4 d-flex'>
-            <div className='col-6 column_divs column_all'>
+            <div className='col-5 column_divs column_all'>
             <div className="row">
-            <div class="col-xl-4 col-lg-6 mb-2">
+            <div class="col-xl-6 col-lg-6">
               <div class="card cardss card-stats mb-4 mb-xl-0">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8">
+                    <div class="col">
                      
                       <span class="h2 font-weight-bold mb-0 card-head">15K</span>
-                      <h5 class="card-title text-uppercase text-muted mb-0 card_title">Clicks</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Followers</h5>
                     </div>
-                    <div class="col-auto col-4">
+                    <div class="col-auto">
                       <div class="icons icon-shape bg-danger text-white rounded-circle shadow">
                         <i class="fas fa-user"></i>
                       </div>
@@ -139,74 +139,16 @@ const GoogleAdsDashboard = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 mb-2">
+            <div class="col-xl-6 col-lg-6">
               <div class="card cardss card-stats mb-4 mb-xl-0">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8">
+                    <div class="col">
                      
-                      <span class="h2 font-weight-bold mb-0 card-head">85K</span>
-                      <h5 class="card-title text-uppercase text-muted mb-0 card_title">Impressions</h5>
+                      <span class="h2 font-weight-bold mb-0 card-head">20K</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Views</h5>
                     </div>
-                    <div class="col-auto col-4">
-                      <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-eye"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 mb-2">
-              <div class="card cardss card-stats mb-4 mb-xl-0">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-8">
-                     
-                      <span class="h2 font-weight-bold mb-0 card-head">65K</span>
-                      <h5 class="card-title text-uppercase text-muted mb-0 card_title">Total Cost</h5>
-                    </div>
-                    <div class="col-auto col-4">
-                      <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-eye"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 ">
-              <div class="card cardss card-stats mb-4 mb-xl-0">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-8">
-                     
-                      <span class="h2 font-weight-bold mb-0 card-head">320</span>
-                      <h5 class="card-title text-uppercase text-muted mb-0 card_title">Conversions</h5>
-                    </div>
-                    <div class="col-auto col-4">
-                      <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-eye"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-6 ">
-              <div class="card cardss card-stats mb-4 mb-xl-0">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-8">
-                     
-                      <span class="h2 font-weight-bold mb-0 card-head">2.5%</span>
-                      <h5 class="card-title text-uppercase text-muted mb-0 card_title">CTR</h5>
-                    </div>
-                    <div class="col-auto col-4">
+                    <div class="col-auto">
                       <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
                         <i class="fas fa-eye"></i>
                       </div>
@@ -218,122 +160,103 @@ const GoogleAdsDashboard = () => {
             </div>
            
             </div>
-           
+            <div className='row linechart_row p-4 mx-0 mt-2'>
+          <HorizontalBar />
             </div>
-            <div className='col-6 px-2 column_all'>
-            <div className="row linechart_row p-4 mx-2 table_row">
-                <h2>Compaigns Performance</h2>
-                <CompaignsTable />
             </div>
-           
-            </div>
-           
-          </div>
-          <div className='main_container pt-4 d-flex'>
-            <div className='col-6 column_divs column_all'>
-            <div className='row linechart_row p-4 mx-0'>
-            <ConversionByAdGroup />
-            </div>
-           
-            </div>
-            <div className='col-6 px-2 column_all'>
-          
+            <div className='col-5 px-2 column_all'>
             <div className="row linechart_row p-4 mx-2">
-                <ClicksByAdGroup />
+                <LineChart />
             </div>
-           
-            </div>
-           
-          </div>
-
-          <div className='main_container pt-4 d-flex'>
-            <div className='col-4 column_divs column_all'>
-            <div className='row linechart_row p-4 mx-0'>
-            <h2>Conv. by location</h2>
-            <Table striped bordered hover>
-      
-      <tbody>
-        <tr>
-          <td>India</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Spain</td>
-          <td>40</td>
-        </tr>
-        <tr>
-          <td>Canada</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td>China</td>
-          <td>30</td>
-        </tr>
-        
-      </tbody>
-    </Table>
-            </div>
-           
-            </div>
-            <div className='col-4 px-2 column_all'>
-          
             <div className="row linechart_row p-4 mx-2">
-            <h2>Clicks by location</h2>
-            <Table striped bordered hover>
-      
-      <tbody>
-        <tr>
-          <td>India</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td>Australia</td>
-          <td>600</td>
-        </tr>
-        <tr>
-          <td>UK</td>
-          <td>700</td>
-        </tr>
-        <tr>
-          <td>Canada</td>
-          <td>400</td>
-        </tr>
-        
-      </tbody>
-    </Table>
+                <FollowersGrowthChart />
             </div>
-           
+            <div className="row linechart_row p-4 mx-2">
+                <FollowersByCountry />
+            </div>
+            </div>
+            <div className='col-2 column_all'>
+            <div className="row d-flex flex-column">
+            <div class="col-xl-12 col-lg-6 mb-2">
+              <div class="card cardss card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                     
+                      <span class="h2 font-weight-bold mb-0 card-head">1.5K</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Shares</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icons icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-share"></i>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-lg-6 mb-2">
+              <div class="card cardss card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                     
+                      <span class="h2 font-weight-bold mb-0 card-head">10K</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Likes</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
             </div>
 
-            <div className='col-4 column_divs column_all'>
-            <div className='row linechart_row p-4 mx-0'>
-            <h2>Spend by location</h2>
-            <Table striped bordered hover>
-      
-      <tbody>
-        <tr>
-          <td>India</td>
-          <td>1200</td>
-        </tr>
-        <tr>
-          <td>Japan</td>
-          <td>900</td>
-        </tr>
-        <tr>
-          <td>France</td>
-          <td>1500</td>
-        </tr>
-        <tr>
-          <td>UK</td>
-          <td>800</td>
-        </tr>
-        
-      </tbody>
-    </Table>
+            <div class="col-xl-12 col-lg-6 mb-2">
+              <div class="card cardss card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                     
+                      <span class="h2 font-weight-bold mb-0 card-head">2K</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Comments</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icons icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-comment"></i>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-lg-6 mb-2">
+              <div class="card cardss card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                     
+                      <span class="h2 font-weight-bold mb-0 card-head">45</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Negative Feedback</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-eye"></i>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
             </div>
            
             </div>
-           
+            </div>
           </div>
         </div>
       </section>
@@ -342,4 +265,4 @@ const GoogleAdsDashboard = () => {
       return <Header mainContainerContent={mainContainerContent} />;
 };
 
-export default GoogleAdsDashboard;
+export default Testing;

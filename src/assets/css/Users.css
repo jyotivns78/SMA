@@ -1,0 +1,284 @@
+.user_home {
+    background-color: #FFFFFF !important;
+    background-image: none;
+}
+
+.heading_button {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #f1e1e1;
+}
+
+.heading_button h4 {
+    color: #887f7f;
+    font-size: 30px;
+}
+
+.heading_button Button {
+    font-size: 16px;
+}
+
+.table th {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+  }
+
+  .table {
+    padding: 10px !important;
+  }
+
+  .button_d {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .button_d button {
+    margin: 0 auto;
+    width: 20%;
+  }
+
+.support_form {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-bottom: 30px;
+}
+
+/* Chatbot style start */
+
+.chat-box {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.chatss {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.panel-title {
+  color:  #887f7f !important;
+}
+
+.chats {
+  padding: 30px 15px;
+  
+}
+
+.chat-avatar {
+  float: right
+}
+
+.chat-avatar .avatar {
+  width: 30px;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.chat-body {
+  display: block;
+  margin: 10px 30px 0 0;
+  overflow: hidden;
+  
+}
+
+.chat-body:first-child {
+  margin-top: 0
+}
+
+.chat-content {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 8px 15px;
+  margin: 0 20px 10px 0;
+  clear: both;
+  color: #fff;
+  background-color: #62a8ea;
+  border-radius: 4px;
+      -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+.chat-content:before {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 5px solid transparent;
+  border-left-color: #62a8ea
+}
+
+.chat-content>p:last-child {
+  margin-bottom: 0
+}
+
+.chat-content+.chat-content:before {
+  border-color: transparent
+}
+
+.chat-time {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, .6)
+}
+
+.chat-left .chat-avatar {
+  float: left
+}
+
+.chat-left .chat-body {
+  margin-right: 0;
+  margin-left: 30px
+}
+
+.chat-left .chat-content {
+  float: left;
+  margin: 0 0 10px 20px;
+  color: #76838f;
+  background-color: #dfe9ef
+}
+
+.chat-left .chat-content:before {
+  right: auto;
+  left: -10px;
+  border-right-color: #dfe9ef;
+  border-left-color: transparent
+}
+
+.chat-left .chat-content+.chat-content:before {
+  border-color: transparent
+}
+
+.chat-left .chat-time {
+  color: #a3afb7
+}
+
+.panel-footer {
+  padding: 0 30px 15px;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.avatar img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0 none;
+  border-radius: 1000px;
+}
+.chat-avatar .avatar {
+  width: 30px;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+}
+
+.send_button {
+  padding: 11px 30px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* Analytics Page Style Start */
+
+.all_card {
+  margin-right: 15px;
+}
+
+.card1 {
+  background-color: #2298F1;
+}
+
+.card2 {
+  background-color: #66B92E;
+ 
+}
+.card3 {
+  background-color: #DA932C;
+}
+.card4 {
+  background-color: #D65B4A;
+}
+
+.card_titles, .card_sub_title {
+  color: #FFFFFF !important;
+}
+
+.card_titles {
+  text-transform: uppercase;
+}
+
+.circular {
+  height: 250px;
+}
+
+
+
+/* Analytics Page Style End */
+
+
+/* Recommendation Style Start */
+
+.reco_div {
+  margin-right: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom: 15px;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+/* Recommendation Style End */
+
+/* Wallet style start */
+
+.box_container {
+  /* background-color: #c6def5; */
+}
+
+.wallet_form {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 20px 20px;
+  background-color: #FFFFFF;
+}
+
+.amounts {
+  width: 50%;
+  margin: 0 auto;
+  
+  padding: 20px 20px;
+}
+
+.amounts p {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 15px 10px;
+  font-size: 24px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.bu_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Wallet Style End */
+
+.p_n_button {
+  cursor: pointer !important;
+}
+
+

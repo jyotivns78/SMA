@@ -12,6 +12,8 @@ const Header = ({ mainContainerContent }) => {
     const [showNotifications, setShowNotifications] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [showDashboardDropdown, setShowDashboardDropdown] = useState(false);
+    const [showManagementDropdown, setShowManagementDropdown] = useState(false);
+    const handleManagementClick = () => setShowManagementDropdown(!showManagementDropdown);
   
     const handleToggleSidebar = () => {
       setIsSidebarOpen(!isSidebarOpen);
@@ -95,31 +97,31 @@ const Header = ({ mainContainerContent }) => {
         {showDashboardDropdown && (
           <div className="dropdown-container">
              <li>
-             <Link to="facebook_dashboard">
+             <Link to="/facebook_dashboard">
              <i className='fab fa-facebook icon'></i>
               <span class="text nav-text">Facebook</span>
             </Link>
              </li>
            <li>
-           <Link to="googleads_dashboard">
+           <Link to="/googleads_dashboard">
            <i className='fab fa-google icon'></i>
               <span class="text nav-text">Google Ads</span>
             </Link>
            </li>
            <li>
-           <Link to="instagram_dashboard">
+           <Link to="/instagram_dashboard">
            <i className='fab fa-instagram icon'></i>
               <span class="text nav-text">Instagram</span>
             </Link>
            </li>
            <li>
-           <Link to="#">
+           <Link to="/linkedin_dashboard">
            <i className='fab fa-linkedin icon'></i>
               <span class="text nav-text">LinkedIn</span>
             </Link>
            </li>
            <li>
-           <Link to="#">
+           <Link to="/twitter_dashboard">
            <i className='fab fa-twitter icon'></i>
               <span class="text nav-text">Twitter</span>
             </Link>
@@ -130,42 +132,61 @@ const Header = ({ mainContainerContent }) => {
 
 
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/automation">
               <i class='bx bx-bar-chart-alt-2 icon'></i>
               <span class="text nav-text">Automation</span>
             </Link>
           </li>
 
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/search_engine">
               <i class='bx bx-bell icon'></i>
               <span class="text nav-text">Search Engine</span>
             </Link>
           </li>
 
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/users">
               <i class='bx bx-user icon'></i>
               <span class="text nav-text">Users</span>
             </Link>
           </li>
 
-          <li class="nav-link">
-            <Link to="#">
+          <li className={`nav-link dropdown-btn ${showManagementDropdown ? 'active' : ''}`}>
+            <Link to="#"  onClick={handleManagementClick}>
             <i class='bx bx-wallet icon'></i>
               <span class="text nav-text">Management</span>
             </Link>
           </li>
 
+          {showManagementDropdown && (
+          <div className="dropdown-container">
+             <li>
+             <Link to="/tasks">
+             <i className='bx bx-task icon'></i>
+              <span class="text nav-text">Tasks</span>
+            </Link>
+             </li>
+           <li>
+           <Link to="/creatives">
+           <i className='bx bx-paint icon'></i>
+              <span class="text nav-text">Creatives</span>
+            </Link>
+           </li>
+          
+          </div>
+        )}
+     
+
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/support">
             <i class='bx bx-heart icon'></i>
               <span class="text nav-text">Support</span>
             </Link>
           </li>
 
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/logs">
               <i class='bx bx-wallet icon'></i>
               <span class="text nav-text">Logs</span>
             </Link>
@@ -173,22 +194,43 @@ const Header = ({ mainContainerContent }) => {
 
              
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/analytics">
             <i class='bx bx-bar-chart-alt-2 icon'></i>
               <span class="text nav-text">Analytics</span>
             </Link>
           </li>
 
           <li class="nav-link">
-            <Link to="#">
+            <Link to="/recommendation">
               <i class='bx bx-wallet icon'></i>
               <span class="text nav-text">Reccomendation</span>
+            </Link>
+          </li>
+
+          <li class="nav-link">
+            <Link to="/wallet">
+              <i class='bx bx-wallet icon'></i>
+              <span class="text nav-text">Wallet</span>
+            </Link>
+          </li>
+
+          <li class="nav-link">
+            <Link to="/business">
+              <i class='bx bx-wallet icon'></i>
+              <span class="text nav-text">Business Name</span>
+            </Link>
+          </li>
+
+          <li class="nav-link">
+            <Link to="/all_in_one">
+              <i class='bx bx-wallet icon'></i>
+              <span class="text nav-text">All In One</span>
             </Link>
           </li>
         </ul>
       </div>
 
-      <div class="bottom-content">
+      {/* <div class="bottom-content">
         <li class="">
           <Link to="#">
             <i class='bx bx-log-out icon'></i>
@@ -208,7 +250,7 @@ const Header = ({ mainContainerContent }) => {
           </div>
         </li>
 
-      </div>
+      </div> */}
     </div>
 
   </nav>
@@ -222,8 +264,21 @@ const Header = ({ mainContainerContent }) => {
   
       {showNotifications && (
         <div className="notification-sidebar">
-          <p>Notification 1</p>
-          <p>Notification 2</p>
+          <div class="notifications" id="box">
+        <h2>Notifications - <span>2</span></h2>
+        <div class="notifications-item"> <img src="https://i.imgur.com/uIgDDDd.jpg" alt="img" />
+            <div class="text">
+                <h4>Samso aliao</h4>
+                <p>Samso Nagaro Like your home work</p>
+            </div>
+        </div>
+        <div class="notifications-item"> <img src="https://img.icons8.com/flat_round/64/000000/vote-badge.png" alt="img" />
+            <div class="text">
+                <h4>John Silvester</h4>
+                <p>+20 vista badge earned</p>
+            </div>
+        </div>
+    </div>
         </div>
       )}
     </div>

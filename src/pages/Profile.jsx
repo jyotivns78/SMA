@@ -9,7 +9,7 @@ const Profile = () => {
         <h1 className='text-center pt-5'>Profile</h1>
         <div class="contact-form-wrapper d-flex justify-content-center">
           
-          <form action="#" class="contact-form">
+          <form action="#" class="contact-form profile_form">
           
             <div className='d-flex'>
             <div>
@@ -34,7 +34,7 @@ const Profile = () => {
               <input type="password" class="form-control rounded border-white mb-3 form-input" placeholder="Password" required />
             </div>
             <div class="submit-button-wrapper">
-              <input type="submit" value="Update" />
+              <input className='pt-2 pb-2' type="submit" value="Update" />
             </div>
           </form>
         </div>

@@ -15,7 +15,7 @@ import FollowersByCountry from '../components/InstagramDashboard/FollowersByCoun
 import { FollowersByLanguage } from '../components/InstagramDashboard/FollowersByLanguage';
 
 
-const InstagramDashboard = () => {
+const LinkedInDashboard = () => {
 
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
@@ -28,7 +28,7 @@ const InstagramDashboard = () => {
    const mainContainerContent = (
     <section className="home facebook_home">
     <div className="text facebook_text">
-      <h3>Instagram Dashboard</h3>
+      <h3>LinkedIn Dashboard</h3>
 
       <div className='facebook_contain d-flex justify-content-between'>
         <div className='date_picker_div'>
@@ -273,7 +273,25 @@ const InstagramDashboard = () => {
           </div>
         </div>
 
-      
+        <div class="col-xl-6 col-lg-6 mb-2">
+          <div class="card cardss card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-8">
+                 
+                  <span class="h2 font-weight-bold mb-0 card-head">5.6%</span>
+                  <h5 class="card-title text-uppercase text-muted mb-0 card_title">Engagement Rate</h5>
+                </div>
+                <div class="col-auto col-4">
+                  <div class="icons icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
        
        
         </div>
@@ -284,45 +302,129 @@ const InstagramDashboard = () => {
       <div className='main_container pt-4 d-flex'>
         <div className='col-4 column_divs column_all '>
         <div className='row linechart_row p-2 mx-0 instagram_column'>
-        <h2>Top Post</h2>
-        <div className='row post_containerr display-flex justify-content-between'>
+        <h2>Top Performing Post</h2>
+        <div className='row post_containerr display-flex justify-content-between post_perform_container'>
           
-          <div className='col-4 post_div'>
+          <div className='col-6 post_div'>
            <div className='post_con'>
-           <img src={post1 } alt='post1' />
-            <div className='icon_number text-center mt-3'>
-            <i class="fas fa-heart"></i>
-            <span>1200</span>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
             </div>
-            <div className='icon_number text-center mt-2'>
-            <i class="fas fa-comment"></i>
-            <span>56</span>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
             </div>
            </div>
           </div>
-          <div className='col-4 post_div'>
+          <div className='col-6 post_div'>
            <div className='post_con'>
-           <img src={post1 } alt='post1' />
-            <div className='icon_number text-center mt-3'>
-            <i class="fas fa-heart"></i>
-            <span>1200</span>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
             </div>
-            <div className='icon_number text-center mt-2'>
-            <i class="fas fa-comment"></i>
-            <span>56</span>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
             </div>
            </div>
           </div>
-          <div className='col-4 post_div'>
+          <div className='col-6 post_div'>
            <div className='post_con'>
-           <img src={post1 } alt='post1' />
-            <div className='icon_number text-center mt-3'>
-            <i class="fas fa-heart"></i>
-            <span>1200</span>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
             </div>
-            <div className='icon_number text-center mt-2'>
-            <i class="fas fa-comment"></i>
-            <span>56</span>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
+            </div>
+           </div>
+          </div>
+
+          <div className='col-6 post_div'>
+           <div className='post_con'>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
+            </div>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
+            </div>
+           </div>
+          </div>
+
+          <div className='col-6 post_div'>
+           <div className='post_con'>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
+            </div>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
+            </div>
+           </div>
+          </div>
+          <div className='col-6 post_div'>
+           <div className='post_con'>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
+            </div>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
+            </div>
+           </div>
+          </div>
+          <div className='col-6 post_div'>
+           <div className='post_con'>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
+            </div>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
+            </div>
+           </div>
+          </div>
+
+          <div className='col-6 post_div'>
+           <div className='post_con'>
+           <h6>Exciting News:</h6>
+            <div className='perform d-flex justify-content-around'>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>324</span>
+            <span>Likes</span>
+            </div>
+            <div className='icon_number text-center mt-2 d-flex flex-column'>
+            <span>42</span>
+            <span>Comments</span>
+            </div>
             </div>
            </div>
           </div>
@@ -460,5 +562,7 @@ const InstagramDashboard = () => {
       return <Header mainContainerContent={mainContainerContent} />;
 };
 
-export default InstagramDashboard;
+export default LinkedInDashboard;
+
+
 

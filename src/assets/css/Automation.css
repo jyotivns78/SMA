@@ -1,0 +1,42 @@
+
+.main-container {
+    /* width: calc(100% - 90px) !important; */
+    overflow: hidden;
+}
+
+.automation_home {
+    background-image: url(../images/backauto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+   padding: 20px 20px;
+   
+}
+
+.automation_home .slide_heading {
+    color: #000;
+}
+
+/* Add these styles to center the slider and set image width and height */
+.image-carousel-container {
+    width: 60%;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Set image width to 100% of the container */
+    height: 400px; /* Set a fixed height for the images */
+  }
+
+  .cards_section {
+    padding: 40px 0px;
+    background-color: rgb(240, 250, 246);
+  }
+
+  .cards_row {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
