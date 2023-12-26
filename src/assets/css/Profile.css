@@ -97,3 +97,23 @@ body {
   .contact-form label span {
     color: rgb(226, 42, 42);
   }
+
+  .tab_card li a {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+  }
+
+.main_tab_contain {
+  padding: 0px !important;
+  border: none !important;
+}
+
+.tab_cards {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.main_tab_contain label {
+  font-size: 16px !important;
+}
+

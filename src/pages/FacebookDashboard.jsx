@@ -41,7 +41,7 @@ const FacebookDashboard = () => {
                       startDate={startDate}
                       endDate={endDate}
                       selectsStart
-                      className="form-control"
+                      className="form-control date_input"
                       placeholderText="Start Date"
                     />
                   </div>
@@ -60,7 +60,7 @@ const FacebookDashboard = () => {
                       startDate={startDate}
                       endDate={endDate}
                       selectsEnd
-                      className="form-control"
+                      className="form-control date_input"
                       placeholderText="End Date"
                     />
                   </div>

@@ -25,19 +25,23 @@
     border-bottom-left-radius: 0px;
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+.date_picker_div input::placeholder {
+  color: #FFFFFF !important;
 }
 
 .date_picker_div input:focus {
     border: 0.1px solid #FFFFFF; 
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     box-shadow: none; 
     border-left: 0px !important;
 }
 
 .date_picker_div span {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     margin-top: 5px;
 }
 
@@ -48,10 +52,11 @@
 .icon_group {
     /* margin-top: 11px; */
     border-right: 0px !important;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 20px !important; 
+    border-top-left-radius: 20px !important;
+    background: transparent !important;
 }
 
 .tabs_wrap{

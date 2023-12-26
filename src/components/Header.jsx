@@ -5,6 +5,9 @@ import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "../assets/css/Header.css";
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../auth/authSlice';
+import { useNavigate } from 'react-router-dom';
 
 initMDB({ Dropdown, Collapse });
 
@@ -14,6 +17,20 @@ const Header = ({ mainContainerContent }) => {
     const [showDashboardDropdown, setShowDashboardDropdown] = useState(false);
     const [showManagementDropdown, setShowManagementDropdown] = useState(false);
     const handleManagementClick = () => setShowManagementDropdown(!showManagementDropdown);
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+      // Perform any additional logout logic (e.g., API call, clearing local storage, etc.)
+    
+      // Dispatch the logout action to update the Redux state
+      dispatch(logoutUser());
+    
+      // Redirect to the login page or any other desired route
+      navigate('/login'); // Adjust the route accordingly
+    };
+    
   
     const handleToggleSidebar = () => {
       setIsSidebarOpen(!isSidebarOpen);
@@ -51,8 +68,8 @@ const Header = ({ mainContainerContent }) => {
                   User Name
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><Link className="dropdown-item" to="#">Profile</Link></li>
-                  <li><Link className="dropdown-item" to="#">Logout</Link></li>
+                  <li><Link className="dropdown-item" to="/profile">Profile</Link></li>
+                  <li><Link className="dropdown-item" to="#" onClick={handleLogout}>Logout</Link></li>
                 </ul>
               </li>
               {/* Notification Icon */}
@@ -71,12 +88,15 @@ const Header = ({ mainContainerContent }) => {
     <header>
       <div class="image-text">
         <span class="image">
-          <img src="logo.png" alt="" />
+          {/* <img src="logo.png" alt="" /> */}
+          <span class="name">SMA</span>
         </span>
 
-        <div class="text logo-text">
-          <span class="name">SMA</span>
-        </div>
+        {isSidebarOpen ? null : (
+                                <div className="text logo-text">
+                                    <span className="name">SMA</span>
+                                </div>
+                            )}
       </div>
 
       <i class='bx bx-chevron-right toggle' onClick={handleToggleSidebar}></i>

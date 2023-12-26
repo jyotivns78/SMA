@@ -1,0 +1,117 @@
+.login_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.AppForm .AppFormLeft h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.AppForm .AppFormLeft input {
+     border-right: none !important;
+    border-left: none !important;
+    padding: 10px !important;
+}
+
+.text-right a {
+    color: #007bff !important;
+}
+
+
+.AppForm .AppFormLeft input:focus{
+    border-color: #ced4da;
+    border-right: none !important;
+    border-left: none !important;
+}
+.AppForm .AppFormLeft input::placeholder{
+   font-size: 15px;
+}
+.AppForm .AppFormLeft i{
+    position: absolute;
+    right: 10px !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.svg {
+    margin-right: 10px;
+}
+
+.AppForm .AppFormLeft a{
+    color: #3a3e42 ;
+}
+.AppForm .AppFormLeft button{
+    background: #0062cc;
+    border-radius: 30px;
+}
+.AppForm .AppFormLeft p a{
+  color: #007bff;
+}
+.AppForm .AppFormRight{
+    background-image: url('../images/login2.webp') !important;
+    height: 450px;
+    background-size: cover !important;
+    background-position: center;
+}
+.AppForm .AppFormRight:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #8D334C, #14AD64);
+    opacity: 0.5;
+}
+.AppForm .AppFormRight h2{
+    z-index: 1;
+    color: #FFFFFF;
+}
+.AppForm .AppFormRight h2::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.AppForm .AppFormRight p{
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    .AppForm .AppFormLeft {
+        padding: 20px 15px !important;
+    }
+    .AppForm .AppFormLeft p {
+        margin-top: 10px !important;
+    }
+}
+
+    .text-right a {
+    color: #007bff !important;
+}
+.AppForm .AppFormRight {
+     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fNFN7s4hGQWEcoGNtGhvKp-AJ-zc7c3BIOzl2L2zk5qOMPXJbfwRWnBv-15g_hZMyzw&usqp=CAU');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+.AppForm .AppFormLeft svg{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.form-check-input[type=checkbox]:checked:after {
+    margin-top: -7px;
+    margin-left: -2px;
+}
